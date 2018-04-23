@@ -19,7 +19,7 @@
 	clear: both;
 }
 body{
-	min-width: 321px;
+	min-width: 320px;
 }
 .wrap{
 	max-width: 980px;
@@ -28,7 +28,6 @@ body{
 	position: relative;
 }
 .content1{
-	max-height: 1000px;
 	background: linear-gradient(to right,#fb5754,#fe7f36,#ff9526);
 	color: white;
 }
@@ -50,28 +49,29 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-
 }
 nav li {
     float: right;
-    padding: 10px;
+    padding: 7px;
     min-width:100px; 
     text-align: center;
     margin: 0px 0px 20px 10px;
-    color: #ffffff;
+    color: white;
     font-size: 18px;
 
-}
-nav li:hover {
-    background-color: #1d1d1d;
 }
 nav li a{
     text-align: center;
     text-decoration: none;
-    padding: 0;
+    padding: 3px;
 }
 nav li a:link,nav li a:visited{
 	color: white;
+}
+nav li a:hover{
+	border-radius: 9px;
+	background-color:white;
+    color: orange;
 }
 .phonetext{
 	width:40%;
@@ -98,14 +98,29 @@ nav li a:link,nav li a:visited{
     border: 2px solid white;
     border-radius: 5px 5px 5px 5px;
 }
+.phonetext a:hover {
+	background-color: white;
+	margin: 10% 0 0 10px;
+	font-size: 18px;
+    color: #ff9842;
+    padding: 20px 54px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px 5px 5px 5px;
+}
+
 .phone{
 	float: right;
 	width: 40%;
 	display: block;
-	margin: 5% 5px 10% 0px;
+	margin: 4% 5px 10% 0px;
 }
 .phone img{
-	width: 100%;
+	float: right;
+	margin-right: 15px;
+	width: 60%;
     height: auto;
 }
 .content2{
@@ -126,10 +141,15 @@ nav li a:link,nav li a:visited{
 	font-weight: bold;
 }
 .elem{
+	font-size: 15px;
 	display:inline-block;
 	max-width: 30%;
 	margin: 3% 1% 3% 1%;
 	text-align: center;
+}
+.elem img{
+	width:100%;
+	height:auto;
 }
 .elem h3{
 	padding-top: 7%;
@@ -159,6 +179,7 @@ nav li a:link,nav li a:visited{
 }
 
 .content3 input[type="email"]{
+	padding-left:25px;
 	width:60%;
 	height: 60px;
 	border: 1px solid white;
@@ -168,11 +189,11 @@ nav li a:link,nav li a:visited{
 	
 }
 ::-webkit-input-placeholder{
-	padding-left: 20px;
 	font-size: 16px;
 	color: white;
 }
 .content3 input[type="submit"]{
+
 	width: 17%;
 	margin: 1% 0% 10% 2%;
 	height: 60px;
